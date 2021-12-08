@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title1": {
       "type": "string"
     },
     "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "title1"
     },
     "venue": {
       "type": "string"
@@ -27,9 +27,6 @@
     },
     "date": {
       "type": "datetime"
-    },
-    "time": {
-      "type": "string"
     },
     "performers": {
       "type": "string"
@@ -53,6 +50,63 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "news"
+    },
+    "media1_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title2": {
+      "type": "string"
+    },
+    "media1_date": {
+      "type": "date"
+    },
+    "media2_date": {
+      "type": "date"
+    },
+    "media1_name": {
+      "type": "string"
+    },
+    "media2_name": {
+      "type": "string"
+    },
+    "Media1_text": {
+      "type": "richtext"
+    },
+    "Media2_text": {
+      "type": "richtext"
+    },
+    "reference1": {
+      "type": "string"
+    },
+    "reference2": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "media_2_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "category": {
+      "type": "string"
     }
   }
 }
